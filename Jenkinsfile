@@ -4,12 +4,12 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    echo 'Compiling the C++ file...'
+                    ecccho 'Compiling the C++ file...'
                     sh "g++ -o PES1UG21CS387-1 PES1UG21CS387.cpp"
                 }
             }
         }
-    }
+    
         stage('Test') {
             steps {
                 script {
